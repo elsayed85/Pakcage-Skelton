@@ -90,7 +90,7 @@ echo -e "Namespace : $VendorName\\$ClassName"
 echo -e "ClassName : $ClassName"
 echo -e "------"
 
-files=$(grep -E -r -l -i ":author|:vendor|:package|:short|spatie|skeleton" --exclude-dir=vendor ./* ./.github/* | grep -v "$script_name")
+files=$(grep -E -r -l -i ":author|:vendor|:package|:short|spatie|Skelton" --exclude-dir=vendor ./* ./.github/* | grep -v "$script_name")
 
 echo "This script will replace the above values in all relevant files in the project directory."
 
@@ -98,12 +98,12 @@ if ! confirm "Modify files?"; then
     $safe_exit 1
 fi
 
-grep -E -r -l -i ":author|:vendor|:package|VendorName|skeleton" --exclude-dir=vendor ./* ./.github/* \
+grep -E -r -l -i ":author|:vendor|:package|VendorName|Skelton" --exclude-dir=vendor ./* ./.github/* \
 | grep -v "$script_name" \
 | while read -r file ; do
     new_file="$file"
-    new_file="${new_file//Skeleton/$ClassName}"
-    new_file="${new_file//skeleton/$package_slug}"
+    new_file="${new_file//Skelton/$ClassName}"
+    new_file="${new_file//Skelton/$package_slug}"
     new_file="${new_file//laravel_/}"
     new_file="${new_file//laravel-/}"
 
@@ -118,8 +118,8 @@ grep -E -r -l -i ":author|:vendor|:package|VendorName|skeleton" --exclude-dir=ve
         | sed "s/VendorName/$VendorName/g" \
         | sed "s/:package_name/$package_name/g" \
         | sed "s/package_slug/$package_slug/g" \
-        | sed "s/skeleton/$package_slug/g" \
-        | sed "s/Skeleton/$ClassName/g" \
+        | sed "s/Skelton/$package_slug/g" \
+        | sed "s/Skelton/$ClassName/g" \
         | sed "s/:package_description/$package_description/g" \
         | sed "/^\[\]\(delete\) /d" \
         > "$temp_file"

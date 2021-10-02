@@ -1,6 +1,6 @@
 <?php
 
-namespace Elsayed85\Skelton\Commands;
+namespace VendorName\Skelton\Commands;
 
 use Illuminate\Console\Command;
 

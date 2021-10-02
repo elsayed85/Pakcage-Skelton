@@ -1,11 +1,11 @@
 <?php
 
-namespace Elsayed85\Skelton;
+namespace VendorName\Skelton;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Elsayed85\Skelton\Skelton
+ * @see \VendorName\Skelton\Skelton
  */
 class SkeltonFacade extends Facade
 {

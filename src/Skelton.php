@@ -1,6 +1,6 @@
 <?php
 
-namespace Elsayed85\Skelton;
+namespace VendorName\Skelton;
 
 class Skelton
 {

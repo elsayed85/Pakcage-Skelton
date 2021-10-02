@@ -1,5 +1,5 @@
 <?php
-// config for Elsayed85/Skelton
+// config for VendorName/Skelton
 return [
 
 ];

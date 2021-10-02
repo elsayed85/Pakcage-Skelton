@@ -1,10 +1,10 @@
 <?php
 
-namespace Elsayed85\Skelton;
+namespace VendorName\Skelton;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Elsayed85\Skelton\Commands\SkeltonCommand;
+use VendorName\Skelton\Commands\SkeltonCommand;
 
 class SkeltonServiceProvider extends PackageServiceProvider
 {

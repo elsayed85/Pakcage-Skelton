@@ -11,6 +11,6 @@ class SkeltonFacade extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'skelton';
+        return 'Skelton';
     }
 }

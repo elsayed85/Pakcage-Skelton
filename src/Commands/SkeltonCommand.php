@@ -6,7 +6,7 @@ use Illuminate\Console\Command;
 
 class SkeltonCommand extends Command
 {
-    public $signature = 'skelton';
+    public $signature = 'Skelton';
 
     public $description = 'My command';
 

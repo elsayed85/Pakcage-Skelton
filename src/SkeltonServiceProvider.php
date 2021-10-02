@@ -16,10 +16,10 @@ class SkeltonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skelton')
+            ->name('Skelton')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skelton_table')
+            ->hasMigration('create_Skelton_table')
             ->hasCommand(SkeltonCommand::class);
     }
 }
